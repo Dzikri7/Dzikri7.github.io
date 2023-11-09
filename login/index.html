@@ -12,44 +12,43 @@
   <div class="container" id="container">
 
     <div class="form-container register-container">
-      <form action="#">
-        <h1>Register Account</h1>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button>Register</button>
-        <span>or use your account</span>
-        <div class="social-container">
-          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-          <a href="#" class="social"><i class="lni lni-google"></i></a>
-          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+      <form id="signupForm">
+        <div class="field">
+          <div class="control">
+            <input id="usernamesignup" class="input is-medium is-rounded" type="username" placeholder="hello@example.com" autocomplete="username" required />
+          </div>
         </div>
+        <div class="field">
+          <div class="control">
+            <input id="passwordsignup" class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
+          </div>
+        </div>
+        <br />
+        <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit">
+          Signup
+        </button>
       </form>
       <script src="../login/js/register.js"></script>
     </div>
 
     <div class="form-container login-container">
-      <form action="#">
-        <h1>Login Account</h1>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <div class="content">
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label>Remember me</label>
-          </div>
-          <div class="pass-link">
-            <a href="#">Forgot password?</a>
-          </div>
+      <form id="login-form">
+        <div class="field">
+            <div class="control">
+                <input id="usernamelogin" class="input is-medium is-rounded" type="text" placeholder="hello@example.com" autocomplete="username" required />
+            </div>
         </div>
-        <button>Login</button>
-        <span>or use your account</span>
-        <div class="social-container">
-          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-          <a href="#" class="social"><i class="lni lni-google"></i></a>
-          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        <div class="field">
+            <div class="control">
+                <input id="passwordlogin" class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
+            </div>
         </div>
-      </form>
+        <br />
+        <p id="message"></p>
+        <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit">
+            Login
+        </button>
+    </form>
       <script src="../login/js/login.js"></script>
     </div>
 
@@ -75,6 +74,8 @@
   </div>
 
   <script src="../login/script.js"></script>
+  <script src="../login/js/login.js"></script>
+  <script src="../login/js/register.js"></script>
 
 </body>
 </html>

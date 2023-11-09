@@ -1,15 +1,15 @@
 document.getElementById('signupForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById('usernamesignup').value;
+    const password = document.getElementById('passwordsignup').value;
 
     const userData = {
         Username: username,
         Password: password
     };
 
-    fetch('https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/signup-1fancy', {
+    fetch('GANTI API NYA BRO', {
         method: 'POST',
         body: JSON.stringify(userData),
         headers: {

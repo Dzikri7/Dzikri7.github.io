@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
         
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const username = document.getElementById("usernamelogin").value;
+        const password = document.getElementById("passwordlogin").value;
 
         // Kirim permintaan POST ke API
-        fetch("https://asia-southeast2-annular-hexagon-401501.cloudfunctions.net/signin-1fancy", {
+        fetch("GANTI API NYA BRO", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(token);
 
                 // Redirect ke halaman dashboard setelah login berhasil
-                window.location.href = "../theme/loginberhasil.html";
+                window.location.href = "../";
             } else {
                 // Pengolahan respons jika login gagal
                 message.textContent = "Login failed. Please check your username and password.";
