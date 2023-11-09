@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.getElementById("passwordlogin").value;
 
         // Kirim permintaan POST ke API
-        fetch("GANTI API NYA BRO", {
+        fetch("https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/signin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
