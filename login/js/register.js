@@ -9,7 +9,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
         Password: password
     };
 
-    fetch('GANTI API NYA BRO', {
+    fetch('https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/signup', {
         method: 'POST',
         body: JSON.stringify(userData),
         headers: {
