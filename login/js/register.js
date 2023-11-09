@@ -9,7 +9,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
         Password: password
     };
 
-    fetch('https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/signup', {
+    fetch('https://asia-southeast2-vivid-vent-401501.cloudfunctions.net/signupfix', {
         method: 'POST',
         body: JSON.stringify(userData),
         headers: {
